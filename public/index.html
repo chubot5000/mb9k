@@ -26,8 +26,6 @@
     /* ── Card ── */
     .card {
       position: relative;
-      max-width: 1400px;
-      margin: 0 auto;
     }
 
     .card-hero {
@@ -123,15 +121,16 @@
       font-family: 'Space Grotesk', sans-serif;
       background: #F5C518;
       color: #0D1F0D;
-      font-weight: 600;
+      font-weight: 700;
       font-size: 14px;
-      padding: 10px 24px;
+      padding: 12px 28px;
       border-radius: 100px;
-      border: 2px solid rgba(58, 90, 0, 0.25);
+      border: none;
       cursor: pointer;
       transition: transform 0.2s ease, box-shadow 0.2s ease;
       text-decoration: none;
       display: inline-block;
+      letter-spacing: 0.01em;
     }
 
     .btn:hover {
@@ -140,14 +139,15 @@
     }
 
     .btn-lg {
-      font-size: 17px;
+      font-size: 18px;
       font-weight: 700;
-      padding: 14px 32px;
+      padding: 16px 36px;
     }
 
     .btn-lg em {
       font-family: 'Playfair Display', serif;
       font-style: italic;
+      font-weight: 500;
     }
 
     /* ── Hero ── */
@@ -174,8 +174,8 @@
     /* ── Mascot ── */
     .mascot-wrap {
       position: absolute;
-      right: 40px;
-      bottom: 0;
+      right: 48px;
+      bottom: 20px;
       z-index: 30;
       opacity: 0;
       transform: translateX(80px);
@@ -183,9 +183,9 @@
     }
 
     .mascot-wrap img {
-      height: 400px;
+      height: 420px;
       width: auto;
-      filter: drop-shadow(0 20px 40px rgba(0,0,0,0.3));
+      filter: drop-shadow(0 16px 32px rgba(0,0,0,0.25));
       animation: float 3s ease-in-out infinite;
     }
 
@@ -198,7 +198,8 @@
 
     .bottom-text h2 {
       color: #0D1F0D;
-      font-size: clamp(22px, 3vw, 36px);
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(24px, 3vw, 38px);
       font-weight: 700;
       line-height: 1.2;
     }
@@ -208,9 +209,9 @@
       font-style: italic;
       font-weight: 400;
       color: #0D1F0D;
-      opacity: 0.65;
-      font-size: clamp(18px, 2.2vw, 24px);
-      margin-top: 4px;
+      opacity: 0.7;
+      font-size: clamp(20px, 2.5vw, 28px);
+      margin-top: 6px;
     }
 
     .bottom-cta {
