@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Space Grotesk', sans-serif;
+  background: #C8E619;
+  min-height: 100vh;
+}
+
+.font-elegant {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Animations */
+@keyframes fadeSlideDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes scaleIn {
+  0% { opacity: 0; transform: scale(0.8); }
+  70% { transform: scale(1.03); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes slideInRight {
+  0% { opacity: 0; transform: translateX(100px); }
+  70% { transform: translateX(-10px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeSlideUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+.animate-nav-1 { animation: fadeSlideDown 0.5s ease-out both; }
+.animate-nav-2 { animation: fadeSlideDown 0.5s ease-out 0.1s both; }
+.animate-nav-3 { animation: fadeSlideDown 0.5s ease-out 0.2s both; }
+.animate-logo { animation: scaleIn 0.7s cubic-bezier(0.34, 1.56, 0.64, 1) 0.2s both; }
+.animate-mascot { animation: slideInRight 0.7s cubic-bezier(0.34, 1.56, 0.64, 1) 0.5s both; }
+.animate-bottom { animation: fadeSlideUp 0.6s ease-out 0.6s both; }
+.animate-float { animation: float 3s ease-in-out infinite; }
+
+.btn-hover {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.btn-hover:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(245, 197, 24, 0.4);
+}
+
+.nav-glass {
+  backdrop-filter: blur(12px);
+  background: rgba(13, 31, 13, 0.8) !important;
+}
